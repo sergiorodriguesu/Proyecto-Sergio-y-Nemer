@@ -30,9 +30,6 @@ class Vacia(Casilla):
     def __init__(self, visibilidad, marca):
         super().__init__(visibilidad, marca)
 
-    def revelar(self):
-        if self.visibilidad == False:
-            self.visibilidad = True
 
     def minas_alrededor(self, matriz, fila, columna):
         minas_adyacentes = 0
@@ -49,10 +46,7 @@ class Vacia(Casilla):
 class Mina(Casilla):
     def __init__(self, visibilidad, marca,):
         super().__init__(visibilidad, marca)
-        
-    def revelar(self):
-        if self.visibilidad == False:
-            self.visibilidad = True
+
 
     
         
